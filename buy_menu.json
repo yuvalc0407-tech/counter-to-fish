@@ -1,0 +1,20 @@
+{
+  "sheet": "buy_menu",
+  "note": "CS-style buy menu paid with fish money (How to Fish's own currency). Open key and rules are design choices; hook to the real input/economy classes is in hooks.json.",
+  "settings": {
+    "openKey": "B",
+    "closeKey": "Escape",
+    "currency": "fish money",
+    "openWhere": null,
+    "openWhere_note": "Decide in build: anywhere on foot vs. only at the dock/boat. Check what How to Fish's pause/reel states allow.",
+    "layout": "CS-style tabbed list, number keys pick items",
+    "refundOnSwap": null
+  },
+  "columns": ["tab","tabKey","weaponId","itemKey","priceSource","requires"],
+  "rows": [
+    {"tab":"Pistols","tabKey":"1","weaponId":"deagle","itemKey":"1","priceSource":"weapons.fishMoneyPrice","requires":null},
+    {"tab":"Rifles","tabKey":"2","weaponId":"ak47","itemKey":"1","priceSource":"weapons.fishMoneyPrice","requires":null},
+    {"tab":"Snipers","tabKey":"3","weaponId":"awp","itemKey":"1","priceSource":"weapons.fishMoneyPrice","requires":null},
+    {"tab":"Melee","tabKey":"4","weaponId":"knife","itemKey":"1","priceSource":"weapons.fishMoneyPrice","requires":null}
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "sheet": "hooks",
+  "note": "Every How to Fish system the mashup touches. targetInGame is found by reading the game's assemblies (Unity Mono, BepInEx 5 route); nothing here is verified yet.",
+  "columns": ["id","system","goal","targetInGame","approach","status"],
+  "rows": [
+    {"id":"hook_cs2_reader","system":"CS2 asset reader","goal":"Read CS2 agent/weapon models, textures and sounds from {game:counter-strike-2} at runtime","targetInGame":null,"approach":"Plugin code opens CS2's pak01 VPK archives read-only and decodes Source 2 compiled resources","status":"todo"},
+    {"id":"hook_asset_convert","system":"asset conversion","goal":"Turn CS2 meshes/textures/sounds into Unity objects at runtime","targetInGame":null,"approach":"Convert in memory, cache under the mod's own config folder","status":"todo"},
+    {"id":"hook_player_model","system":"player model","goal":"Replace fisherman body/skin with a CS agent","targetInGame":null,"approach":"Swap or overlay the player's visual mesh; scale collider/camera to match","status":"todo"},
+    {"id":"hook_player_scale","system":"player scale","goal":"CS agent body size, with camera height and reach still working","targetInGame":null,"approach":"Apply agent.scaleVsFisherman to model, camera offset, interaction range","status":"todo"},
+    {"id":"hook_equipment","system":"equipment/inventory","goal":"Add CS weapons as holdable items","targetInGame":null,"approach":"Register new items the way the game's own guns are registered","status":"todo"},
+    {"id":"hook_weapon_fire","system":"weapon fire","goal":"CS weapons shoot, reload and damage creatures like the game's guns","targetInGame":null,"approach":"Reuse the game's gun/damage path with CS stats from weapons.json","status":"todo"},
+    {"id":"hook_killscore","system":"killscore","goal":"CS weapon kills feed the game's killscore multiplier","targetInGame":null,"approach":"Route through the existing killscore calculation","status":"todo"},
+    {"id":"hook_economy","system":"money","goal":"Spend fish money in the buy menu","targetInGame":null,"approach":"Read/deduct the player's money through the game's economy code","status":"todo"},
+    {"id":"hook_input","system":"input","goal":"B opens buy menu without clashing with existing keys","targetInGame":null,"approach":"Check the game's bindings first, then add the key","status":"todo"},
+    {"id":"hook_buy_ui","system":"UI","goal":"CS-style buy menu overlay","targetInGame":null,"approach":"In-game overlay drawn by the plugin","status":"todo"},
+    {"id":"hook_audio","system":"audio playback","goal":"Play converted CS sounds on fire/reload/menu events","targetInGame":null,"approach":"AudioSource on the weapon; volume matched to the game's mixer","status":"todo"}
+  ]
+}

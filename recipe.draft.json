@@ -1,0 +1,16 @@
+{
+  "_note": "ILLUSTRATIVE shape only. validate_recipe and inspect_package decide the real schema; fill the custom- slug from search_games on the PC.",
+  "games": [
+    {"slug": "custom-<how-to-fish slug from search_games>", "role": "primary"},
+    {"slug": "counter-strike-2", "role": "companion"}
+  ],
+  "together": false,
+  "together_note": "CS2 is only read from disk and is never launched, so no recipe.together.",
+  "components": [
+    {"name": "BepInEx 5 (x64, Mono)", "install": "{game}", "note": "Not a Melty-installed loader for this game, so bundle it; confirm its license allows redistribution and credit its authors."},
+    {"name": "CsFish plugin", "install": "{game}/BepInEx/plugins/CsFish/"}
+  ],
+  "env": {"CSFISH_CS2_DIR": "{game:counter-strike-2}"},
+  "multiplayer": null,
+  "multiplayer_note": "v1 is solo. Co-op later: How to Fish supports up to 4 players, but everyone would need the mod."
+}

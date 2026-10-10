@@ -1,0 +1,10 @@
+{
+  "sheet": "agent",
+  "note": "Player takes a CS agent's skin and body size. Agent ids/model paths are filled by reading the player's installed CS2 (never shipped). 72 units standing is the usual CS player height (~1.83 m); verify.",
+  "columns": ["id","side","agentName","modelSource","scaleVsFisherman","csHeightUnits","bodyHook","verified"],
+  "rows": [
+    {"id":"agent_ct","side":"CT","agentName":null,"modelSource":null,"scaleVsFisherman":null,"csHeightUnits":72,"bodyHook":"hook_player_model","verified":false},
+    {"id":"agent_t","side":"T","agentName":null,"modelSource":null,"scaleVsFisherman":null,"csHeightUnits":72,"bodyHook":"hook_player_model","verified":false}
+  ],
+  "selection": "v1: pick CT or T at start (choice UI to decide in build); one agent each is enough."
+}

@@ -1,0 +1,24 @@
+{
+  "sheet": "weapons",
+  "note": "One row per weapon. csReference values are from memory of CS and are NOT verified against the installed CS2; verified=false until checked. fish* columns stay null until the build session reads How to Fish's health/killscore model.",
+  "columns": ["id","csName","tab","csReference","fishMoneyPrice","fishDamage","magSize","fireMode","reloadSeconds","killscoreMultiplier","modelSource","soundSet","hook","verified"],
+  "rows": [
+    {"id":"ak47","csName":"AK-47","tab":"rifles",
+     "csReference":{"price":2700,"damage":36,"magSize":30,"fireMode":"auto","reloadSeconds":2.43},
+     "fishMoneyPrice":null,"fishDamage":null,"magSize":30,"fireMode":"auto","reloadSeconds":2.43,"killscoreMultiplier":null,
+     "modelSource":null,"soundSet":"snd_ak47","hook":"hook_weapon_fire","verified":false},
+    {"id":"awp","csName":"AWP","tab":"snipers",
+     "csReference":{"price":4750,"damage":115,"magSize":5,"fireMode":"bolt","reloadSeconds":3.7},
+     "fishMoneyPrice":null,"fishDamage":null,"magSize":5,"fireMode":"bolt","reloadSeconds":3.7,"killscoreMultiplier":null,
+     "modelSource":null,"soundSet":"snd_awp","hook":"hook_weapon_fire","verified":false},
+    {"id":"deagle","csName":"Desert Eagle","tab":"pistols",
+     "csReference":{"price":700,"damage":53,"magSize":7,"fireMode":"semi","reloadSeconds":2.2},
+     "fishMoneyPrice":null,"fishDamage":null,"magSize":7,"fireMode":"semi","reloadSeconds":2.2,"killscoreMultiplier":null,
+     "modelSource":null,"soundSet":"snd_deagle","hook":"hook_weapon_fire","verified":false},
+    {"id":"knife","csName":"Knife","tab":"melee",
+     "csReference":{"price":0,"damage":40,"magSize":null,"fireMode":"melee","reloadSeconds":null},
+     "fishMoneyPrice":0,"fishDamage":null,"magSize":null,"fireMode":"melee","reloadSeconds":null,"killscoreMultiplier":null,
+     "modelSource":null,"soundSet":"snd_knife","hook":"hook_weapon_fire","verified":false}
+  ],
+  "later": "Rest of the CS arsenal (SMGs, shotguns, other rifles, grenades) is out of v1; add as rows once the four above work."
+}

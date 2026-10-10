@@ -1,0 +1,21 @@
+{
+  "sheet": "audio",
+  "note": "CS gun sounds and reload feel. Sources are read from the player's CS2 install at runtime and converted for Unity playback; none are shipped.",
+  "columns": ["id","weaponId","event","soundSource","volume","verified"],
+  "rows": [
+    {"id":"snd_ak47_fire","weaponId":"ak47","event":"fire","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_ak47_reload","weaponId":"ak47","event":"reload","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_ak47_draw","weaponId":"ak47","event":"draw","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_awp_fire","weaponId":"awp","event":"fire","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_awp_bolt","weaponId":"awp","event":"bolt","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_awp_reload","weaponId":"awp","event":"reload","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_deagle_fire","weaponId":"deagle","event":"fire","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_deagle_reload","weaponId":"deagle","event":"reload","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_knife_swing","weaponId":"knife","event":"swing","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_knife_hit","weaponId":"knife","event":"hit","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_empty_click","weaponId":"*","event":"empty","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_ui_buy_open","weaponId":null,"event":"menu_open","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_ui_buy_ok","weaponId":null,"event":"purchase","soundSource":null,"volume":null,"verified":false},
+    {"id":"snd_ui_buy_denied","weaponId":null,"event":"not_enough_money","soundSource":null,"volume":null,"verified":false}
+  ]
+}
